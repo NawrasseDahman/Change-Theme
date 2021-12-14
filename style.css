@@ -1,0 +1,201 @@
+*{
+  font-family:sans-serif;
+  padding:0px;
+  margin:0px;
+  border:none;
+  outline:none;
+  box-sizing:border-box;
+  user-select:none;
+  transition:all 0.3s;
+}
+body{
+  background:#f0f2f5;
+  margin:5px;
+}
+.container{
+  position:fixed;
+  inset:15px;
+  display:flex;
+  justify-content:center;
+}
+.container .btn{
+  width:105px;
+  height:32px;
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  background:dodgerblue;
+  margin:3px;
+  cursor:pointer;
+  color:white;
+  border-radius:4px;
+  font-weight:bolder;
+  opacity:0.8;
+}
+.container .btn:hover{
+  opacity:1;
+}
+.browser{
+  max-width:550px;
+  height:350px;
+  border:2px solid #3333;
+  border-radius:9px;
+  margin:110px auto;
+  overflow:hidden;
+  position:relative;
+}
+.browser nav{
+  max-width:100%;
+  height:45px;
+  position:relative;
+  inset:0px;
+  display:flex;
+}
+.browser nav .row{
+  display:flex;
+  align-items:center;
+}
+.browser nav .color{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.browser nav .color span{
+  width:15px;
+  height:15px;
+  border-radius:50%;
+  margin:0px 3px;
+}
+.browser nav .color .red{
+  background:#ff5f58;
+  margin-left:10px;
+}
+.browser nav .color .green{
+  background:#28ca42;
+}
+.browser nav .color .yellow{
+  background:#ffbf2f;
+}
+.browser nav .arrow-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-left:10px;
+}
+.browser nav .arrow-container .arrows{
+  display:flex;
+  width:27px;
+  height:27px;
+  margin:0px 1px;
+  cursor:pointer;
+  justify-content:center;
+  align-items:center;
+  border:1px solid #3333;
+  border-radius:5px;
+  font-size:17px;
+  font-weight:bolder;
+}
+.row2{
+  width:100%;
+  justify-content:center;
+}
+.row2 input{
+  width:90%;
+  height:27px;
+  border-radius:3px;
+  padding:4px 10px;
+  background-size:22px;
+  background-repeat:no-repeat;
+  background-position:99% center;
+  transition:background-position 0.4s;
+}
+.row2 input:focus{
+  background-position:150%;
+}
+.row2 input:valid{
+  background-position:150%
+}
+.card-container{
+  float:right;
+}
+.card1{
+  width:130px;
+  height:150px;
+  margin:20px;
+  border-radius:10px;
+}
+.card2{
+  width:130px;
+  height:50px;
+  border-radius:10px;
+  margin:20px;
+}
+/*LIGHT THEME STYLE*/
+.light{
+  background:#ffff;
+}
+.light nav{
+  background:#e0dee0;
+}
+.light nav .arrow-container .arrows{
+  background:#f8f8f8;
+  color:#999;
+}
+.light nav .arrow-container .arrows:hover{
+  color:#333;
+  background:#ffff;
+}
+.light nav .row2 input{
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/6/67/Antu_edit-find-mail.svg");
+  background-color:whitesmoke;
+  color:black;
+}
+.light .cards{
+  background:#ececec;
+}
+/*DARK THEME STYLE*/
+.dark{
+  background:#262626;
+}
+.dark nav{
+  background:#313131;
+}
+.dark nav .arrow-container .arrows{
+  background:#202020;
+  color:#999;
+}
+.dark nav .arrow-container .arrows:hover{
+  color:#ffff;
+  background:#000000;
+}
+.dark nav .row2 input{
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/0/06/Antu_dialog-icon-preview.svg");
+  background-color:#141402;
+  color:lightgray;
+}
+.dark .cards{
+  background:#303030;
+}
+/*BLUE THEME STYLE*/
+.blue{
+  background:#2c3647;
+}
+.blue nav{
+  background:#212b3b;
+}
+.blue nav .arrow-container .arrows{
+  background:#202027;
+  color:#999;
+}
+.blue nav .arrow-container .arrows:hover{
+  color:lightgray;
+  background:#202030;
+}
+.blue nav .row2 input{
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/0/06/Antu_dialog-icon-preview.svg");
+  background-color:#202027;
+  color:lightgray;
+}
+.blue .cards{
+  background:#252d3b;
+}
